@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>muziki</title>
+
+<link href="css/decorative.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+<!-- font-awesome-icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+
+<body>
+
+<meta name="robots" content="noindex">
+<body>
+
+<style>
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+
+#w3lDemoBar.w3l-demo-bar {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  padding: 40px 5px;
+  padding-top:70px;
+  margin-bottom: 70px;
+  background: #0D1326;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+
+#w3lDemoBar.w3l-demo-bar a {
+  display: block;
+  color: #e6ebff;
+  text-decoration: none;
+  line-height: 24px;
+  opacity: .6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#w3lDemoBar.w3l-demo-bar span.w3l-icon {
+  display: block;
+}
+
+#w3lDemoBar.w3l-demo-bar a:hover {
+  opacity: 1;
+}
+
+#w3lDemoBar.w3l-demo-bar .w3l-icon svg {
+  color: #e6ebff;
+}
+#w3lDemoBar.w3l-demo-bar .responsive-icons {
+  margin-top: 30px;
+  border-top: 1px solid #41414d;
+  padding-top: 40px;
+}
+#w3lDemoBar.w3l-demo-bar .demo-btns {
+  border-top: 1px solid #41414d;
+  padding-top: 30px;
+}
+#w3lDemoBar.w3l-demo-bar .responsive-icons a span.fa {
+  font-size: 26px;
+}
+#w3lDemoBar.w3l-demo-bar .no-margin-bottom{
+  margin-bottom:0;
+}
+.toggle-right-sidebar span {
+  background: #0D1326;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #e6ebff;
+  border-radius: 50px;
+  font-size: 26px;
+  cursor: pointer;
+  opacity: .5;
+}
+.pull-right {
+  float: right;
+  position: fixed;
+  right: 0px;
+  top: 70px;
+  width: 90px;
+  z-index: 99999;
+  text-align: center;
+}
+/* ============================================================
+RIGHT SIDEBAR SECTION
+============================================================ */
+
+#right-sidebar {
+  width: 90px;
+  position: fixed;
+  height: 100%;
+  z-index: 1000;
+  right: 0px;
+  top: 0;
+  margin-top: 60px;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  overflow-y: auto;
+}
+
+
+/* ============================================================
+RIGHT SIDEBAR TOGGLE SECTION
+============================================================ */
+
+.hide-right-bar-notifications {
+  margin-right: -300px !important;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+
+
+@media (max-width: 992px) {
+  #w3lDemoBar.w3l-demo-bar a.desktop-mode{
+      display: none;
+
+  }
+}
+@media (max-width: 767px) {
+  #w3lDemoBar.w3l-demo-bar a.tablet-mode{
+      display: none;
+
+  }
+}
+@media (max-width: 568px) {
+  #w3lDemoBar.w3l-demo-bar a.mobile-mode{
+      display: none;
+  }
+  #w3lDemoBar.w3l-demo-bar .responsive-icons {
+      margin-top: 0px;
+      border-top: none;
+      padding-top: 0px;
+  }
+  #right-sidebar,.pull-right {
+      width: 90px;
+  }
+  #w3lDemoBar.w3l-demo-bar .no-margin-bottom-mobile{
+      margin-bottom: 0;
+  }
+}
+</style>
+
+	<div class="banner1">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header navbar-left">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<h1><a class="navbar-brand" href="home.html">Muziki<span> News</span></a></h1>
+				</div>
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<nav class="menu menu--iris">
+						<ul class="nav navbar-nav menu__list">
+							<li class="menu__item"><a href="home.html" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="music.html" class="menu__link">Music</a></li>
+							<li class="menu__item menu__item--current"><a href="mail.html" class="menu__link">Mail Us</a></li>
+						</ul>
+					</nav>
+				</div>
+			</nav>
+		</div>
+	</div>
+
+
+	<div class="latest-albums">
+		<div class="container">
+			<h3 class="agileits_w3layouts_head">send us an <span>email</span></h3>
+			<p class="w3_agileits_para">MAIL US ON MUZIKI NEWS</p>
+			<div class="wthree_latest_albums_grids gallery">
+				<div class="col-md-8 agile_mail_grid_left">
+					<form action="#" method="post">
+						<input type="text" name="Name" placeholder="Name" required="">
+						<input type="email" name="Email" placeholder="Email" required="">
+						<input type="text" name="Subject" placeholder="Subject" required="">
+						<textarea name="Message" placeholder="Your message here..." required=""></textarea>
+						<input type="submit" value="Submit Now" >
+					</form>
+				</div>
+				<div class="col-md-4 w3_agileits_mail_grid_right">
+					<div class="wthree_mail_grid_right">
+						<img src="img/6.jpg" alt=" " class="img-responsive" />
+						<h4>REMA <span>Singer</span></h4>
+						<ul class="agileinfo_phone_mail">
+							<li><i class="fa fa-home" aria-hidden="true"></i>Address: WASHINGTON, London.</li>
+							<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>Phone: +1234 567 893</li>
+							<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>Email: <a href="godsonqwiffer@gmail.com">godsonqwiffer@gmail.com</a></li>
+						</ul>
+						
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //mail -->
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-4 agileinfo_footer_grid">
+				<h3>About Us</h3>
+				<p>BONGO MUZIKI HABARI ni moja ya trending social media inayo elezea kuhusu habari mbalimbali zinazo husu muziki</p>
+				<div class="agileits_footer_grid_gallery">
+					<div class="agileits_footer_grid_gallery1">
+						<a href="#" data-toggle="modal" data-target="#myModal"><img src="images/2.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="agileits_footer_grid_gallery1">
+						<a href="#" data-toggle="modal" data-target="#myModal"><img src="images/3.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="agileits_footer_grid_gallery1">
+						<a href="#" data-toggle="modal" data-target="#myModal"><img src="images/4.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="agileits_footer_grid_gallery1">
+						<a href="#" data-toggle="modal" data-target="#myModal"><img src="images/7.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="agileits_footer_grid_gallery1">
+						<a href="#" data-toggle="modal" data-target="#myModal"><img src="images/8.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="agileits_footer_grid_gallery1">
+						<a href="#" data-toggle="modal" data-target="#myModal"><img src="images/9.jpg" alt=" " class="img-responsive" /></a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="col-md-4 agileinfo_footer_grid">
+				<h3>Email us today</h3>
+				<ul class="w3agile_footer_grid_list">
+					<li>Pata habari kwa haraka kuhusu mziki kwa kututafuta katika email yetu <a href="http://godsonqwifer@gmail.com">http://godsonqwifer@gmail.com</a> alias, ut aut reiciendis.
+				
+			</div>
+			<div class="col-md-4 agileinfo_footer_grid">
+				<h3>Social Media</h3>
+				<ul class="agileinfo_social_icons">
+					<li><a href="#" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span><i>-</i>Facebook</a></li>
+					<li><a href="#" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span><i>-</i>Twitter</a></li>
+					
+					<li><a href="#" class="instagram"><span class="fa fa-instagram" aria-hidden="true"></span><i>-</i>Instagram</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					Symphony
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+				</div>
+				<section>
+					<div class="modal-body">
+						<div class="col-md-6 w3_modal_body_left">
+							<img src="images/15.jpg" alt=" " class="img-responsive" />
+						</div>
+						<div class="col-md-6 w3_modal_body_right">
+							<h4>Suspendisse et sapien ac diam suscipit posuere</h4>
+							<p>Ut enim ad minima veniam, quis nostrum 
+							vel eum iure reprehenderit qui in ea voluptate velit 
+							esse quam nihil molestiae consequatur.
+							<i>" Quis autem vel eum iure reprehenderit qui in ea voluptate velit 
+								esse quam nihil molestiae consequatur.</i>
+								elementum ac ac purus.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+</html>
